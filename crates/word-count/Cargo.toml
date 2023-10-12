@@ -1,0 +1,17 @@
+[package]
+name = "word-count-py"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+name = "word_count"
+crate-type = ["cdylib"]
+doc = false
+
+[dependencies]
+pyo3 = { workspace = true }
+rayon = { workspace = true }
+#word-count = { path = "../word-count" }
+
+[build-dependencies]
+pyo3-build-config = { version = "0.18" }

@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+members = ["crates/word-count"]
+
+[workspace.dependencies]
+pyo3 = "0.20.0"
+rayon = { git = "https://github.com/rayon-rs/rayon", tag = "v1.0.2" }
